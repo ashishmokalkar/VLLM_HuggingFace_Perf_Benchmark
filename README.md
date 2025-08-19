@@ -54,6 +54,6 @@ This repo reproduces a **real-world benchmark** comparing **Hugging Face FP16 in
 ## 🚀 Quickstart
 
 ### Google Colab
-1. Open the notebook: **vllm_quant_inference_benchmark.ipynb**  in google colab
+1. Open the notebook: **[vllm_quant_inference_benchmark.ipynb](https://colab.research.google.com/github/ashishmokalkar/VLLM_HuggingFace_Perf_Benchmark/blob/main/vllm_quant_inference_benchmark.ipynb)**  in google colab
 2. `Runtime → Change runtime type → GPU (T4)`
 3. Run all cells (installs deps, runs benchmark, saves the results in csv and json file ).
