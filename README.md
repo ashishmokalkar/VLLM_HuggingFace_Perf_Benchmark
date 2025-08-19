@@ -2,7 +2,7 @@
 
 # LLM Inference Benchmark: vLLM inference engine + INT4 Quantization vs Hugging Face (Facebook/OPT-125M)
 
-[![Open in Colab](https://img.shields.io/badge/Colab-Open-orange)](https://colab.research.google.com/github/<your-username>/llm-inference-bench-vllm-int4-vs-huggingface/blob/main/notebooks/colab_benchmark.ipynb)
+[![Open in Colab](https://img.shields.io/badge/Colab-Open-orange)](https://colab.research.google.com/github/ashishmokalkar/VLLM_HuggingFace_Perf_Benchmark/blob/main/vllm_quant_inference_benchmark.ipynb)
 ![GPU](https://img.shields.io/badge/GPU-T4-blue)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
