@@ -319,14 +319,6 @@ class VLLMInt4Benchmark:
         print("⚡ vLLM + INT4 Quantization")
         print("="*60)
 
-        if not self.vllm_available:
-            print("Using simulated results (vLLM not available)")
-            return {
-                'load_time_s': 0,
-                'model_size_mb': 0,
-                'memory_used_mb': 0
-            }
-
         try:
             from vllm import LLM
 
@@ -374,14 +366,6 @@ class VLLMInt4Benchmark:
 
     def run_inference(self, prompt: str) -> Dict:
         """Run inference with vLLM"""
-        if not self.vllm_available or self.llm is None:
-            # Return simulated results based on typical vLLM performance
-            return {
-                'inference_time_s': 0.15,  # Typically 3x faster
-                'tokens_generated': self.config.max_new_tokens,
-                'output_text': f"{prompt} [vLLM simulated response]",
-                'tokens_per_second': self.config.max_new_tokens / 0.15
-            }
 
         from vllm import SamplingParams
 
@@ -473,7 +457,7 @@ class VLLMInt4Benchmark:
         print(f"   Throughput: {results['throughput_tokens_per_s']:.1f} tokens/s")
         print(f"   Memory used: {results['memory_used_mb']:.1f}MB")
         if not self.vllm_available:
-            print("   Note: Results are simulated (vLLM not available)")
+            print("   Note:  (vLLM not available)")
 
         return results
 
